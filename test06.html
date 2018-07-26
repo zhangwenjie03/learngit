@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+/*引入字体*/
+/*@font-face {
+    font-family: "Montserrat ExtraLight";
+    src: url("./font-family/Montserrat-ExtraLight.ttf");
+}*/
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("./font-family/Montserrat-Light.otf");
+}
+
+	body{
+		margin:0;
+		padding:0;
+		font-size:1rem;
+		text-align: center;
+		font-family: Montserrat;
+	}
+
+	#part1{
+		width:100%;
+		margin:0 auto;
+		height:40rem;
+		background-image: url('./img-project/Background1.png'); 
+		background-size:cover;
+		color:white;
+		padding:15rem 0;			
+	}
+
+	#part1 h1{
+		font-weight: lighter;
+		font-size:3rem;
+	}
+
+/*hello world下的说明文字*/
+	.word{
+		width:50%;
+		margin:0 auto;
+		margin-top: 4rem;
+		line-height: 2rem;
+	}
+
+	#sign{
+		border:0.1rem solid grey;
+		margin:5rem auto;
+		width:70rem;
+		height:17rem;
+		padding:5rem;
+
+
+
+	}
+
+	#sign p:nth-child(2){
+		color:#ccc;
+		font-size:0.8rem;
+	}
+
+	#sign input{
+		margin-top:5rem;
+		border:1px solid rgba(255,255,255,0.2);
+		border-radius: 2px;
+
+	}
+	#sign form>input[type='text'],
+	#sign form>input[type='password']{
+		width:18rem;
+		height:2.5rem;
+		margin-right:3rem;
+		background-color: none;
+		background-color: transparent;
+	}
+
+	#sign form >input[type='button']{
+		background:white;
+		height:2.5rem;
+	}
+
+/*section1*/
+	#section1{
+		width:100%;
+		height:150rem;
+		text-align: center;
+		padding:5rem 0;
+/*		background: url('../sublime_project/IFE-CSSstyud1-master/image/2.png') no-repeat;*/
+	}
+
+
+	.p1{
+		text-transform: uppercase;
+		font-size:1rem;
+		margin-bottom:5rem;
+	}
+
+	.ready{
+		font-size:2.2rem;
+		font-weight: bold;
+		width:50%;
+		margin:0 auto;
+	}
+
+	.object-box{
+		width:100%;
+		padding:3rem 15%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.object-box div:nth-child(2n){
+		margin-left:10%;
+	}
+
+	.object-box div{
+		width:33%;
+		margin-top:8rem 6rem;
+	}
+
+	.object-box i{
+		display:inline-block;
+		width:10%;
+		height:6rem;
+		float:left;	
+		margin-top:1rem;
+		background-size: auto 5rem;
+	}
+
+	.object-box dl{
+		float:left;
+		width:50%;
+		padding-left:0;
+
+	}
+	.object-box dt{
+		margin-left:-14rem;
+		margin-bottom: 1rem;
+	}
+
+	.object-box dd{
+		text-align: left
+	}
+
+	/*清除四个小盒子内的浮动*/
+.objects-box div::after{
+    content: "";
+    display: table-cell;
+    height: 0;
+    clear: both;
+}
+
+
+
+	#mobile i{
+		background:url('./img-project/c.png') no-repeat;
+	}
+
+	#access i{
+		background:url('./img-project/Check Icon.png') no-repeat;
+	}
+
+	#fluid i{
+		background:url('./img-project/Pencil Icon.png') no-repeat;
+	}
+
+	#customer i{
+		background:url('./img-project/Settings Icon.png') no-repeat;
+	}
+
+
+	
+
+	</style>
+</head>
+<body>
+<div id='part1'>
+	<h1>hello world</h1>
+	<p class='word'>china is speeding up strategic plan,snandards,traffic rules,laws and regulations on accident-incurred liabilities for its smart car industry,Econnmic Information Daily reported Thursday.</p>
+	<div id='sign'>
+		<p>CREATE YOUR ACCOUNT</p>
+		<p>IT IS ABSOLUTELY FREE</p>
+		<form>
+			<input type='text' placeholder='create your username's>
+			<input type='password' placeholder='create your password'>
+			<input type="button" value='sign up'>
+		</form>
+	</div>
+</div>
+
+<section id='section1'>
+	<p class='p1'>BOATLOADS OF AWESOME</p>
+	<p class='ready'>ready-made,custonmizable,HTML landing page sections</p>
+	<div class='object-box'>
+		<div id='mobile'>
+			<i></i>
+			<dl>
+				<dt>Mobile First</dt>
+				<dd>All modulz are built mobile-first for maximum device compatibility.</dd>
+			</dl>
+		</div>
+
+		<div id='access'>
+			<i></i>
+			<dl>
+				<dt>Accessiblilty</dt>
+				<dd>Support for IE8,mobile and tablet devices,screenreaders and color blind</dd>
+			</dl>
+		</div>
+
+				<div id='fluid'>
+			<i></i>
+			<dl>
+				<dt>Fluid Typography</dt>
+				<dd>On different screen sizes,fonts automagically scale with the viewport.</dd>
+			</dl>
+		</div>
+
+				<div id='customer'>
+			<i></i>
+			<dl>
+				<dt>Customization</dt>
+				<dd>Make and design your own using the Style Editor.<br />
+				Presonalize fonts,colors,and layouts to create the custon look you want</dd>
+			</dl>
+		</div>
+
+	</div>
+
+
+
+</section>
+
+</body>
+</html>
